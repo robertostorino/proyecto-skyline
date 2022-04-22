@@ -1,0 +1,239 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+/*Fuente que se utilizará en el sitio web*/
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Le aplico estilo a todos los enlaces del header*/
+header a{
+    text-decoration: none;
+    color: white;
+}
+/*Aplico estilo para que al pasar el mouse sobre los enlaces del navbar estos cambien de color*/
+header a:hover{
+    color: cornflowerblue;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Configuración contenedor-grid-padre*/
+.contenedor-grid {
+    /*Configuración grid*/
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80px, auto, 100px;
+    /*Estilos*/
+    padding: 0;
+
+    
+    
+}
+
+/*Configuración de la barra de navegación*/
+.navbar {
+    /*Configuración grid*/
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    /*Estilos*/
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+.navbar__logo,
+.navbar__links {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px
+}
+
+/*Configuración del Main*/
+.main {
+    /*Configuración grid*/
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    /*Estilos*/
+    padding-top: 80px;
+    background-image: url("../img/nexus640x426.jpg");
+    background-size: cover;
+}
+
+/*Configuraciones para títulos*/
+.titulo{
+    text-align: center;
+}
+.titulo--verde{
+    color: #00A170;
+    font-weight: bold;
+}
+.titulo--cornflowerblue{
+    color: cornflowerblue;
+}
+
+/*Configuración del Footer*/
+.footer {
+    /*Configuración grid*/
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    /*Estilos*/
+    background-color: #222;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: auto; /*Junto con la configuración adicional del body permite posicionar correctamente*/
+}
+
+
+/*       Cards      */
+/*Configuro la caja contenedora de las tarjetas del main*/
+.tarjetas{
+    padding: 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Estilo para cada tarjeta*/
+.tarjeta{
+    width: 300px;
+    padding: 10px 0px;
+    margin: 10px;
+    background-color: azure;
+    /*background-color: rgb(225, 245, 233);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0.4rem;
+    transition: all 0.5s ease;
+}
+/*Separo el título y parrafo de los costados*/
+.tarjeta h3, .tarjeta p{
+    padding: 1rem;
+}
+/*Efecto hover con sombreado*/
+.tarjeta:hover{
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.3);
+    background-color: #00A170;
+    color: white;
+}
+
+/*Configuro la caja contenedora de las tarjetas de la página Services*/
+.containerServices{
+    padding: 10px 10px;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.tarjeta__horizontal{
+    width: 560px;
+    height: 350px;
+    margin: 10px;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta__horizontal__titulo{
+    padding: 30px;
+    margin: 5px;
+}
+/*Hover effect*/
+.tarjeta__horizontal:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+/*Estilos de Portfolio*/
+.tarjeta__horizontal__portfolio{
+    padding-top: 5px;
+    margin: 10px;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+}
+/*Hover effect*/
+.tarjeta__horizontal__portfolio:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+/*Centro el título en la tarjeta de portfolio*/
+.tarjeta__horizontal__portfolio h2{
+    text-align: center;
+}
+
+
+/*Container sin Tarjeta para la página de ABOUT*/
+.containerSinTarjeta{
+    padding: 50px 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+/*Estilos para la página CONTACT*/
+/*Estilo para el Container de Formulario*/
+.containerFormulario{
+    height: 600px;
+    padding: 10px 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+/*Estilo para el Formulario*/
+.formulario{
+    padding: 25px;
+    margin: 2px;
+    line-height: 18px;
+    background-color: rgba(182, 225, 238, 0.4);
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.4);
+}
+/*Estilo de boton*/
+button{
+    background-color: #00A170;
+    color: white;
+    padding: 3px;
+    border-radius: 00.1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        font-size: 20px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
