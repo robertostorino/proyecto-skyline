@@ -201,7 +201,7 @@ body{
 .tarjeta__horizontal__portfolio{
     padding-top: 5px;
     margin: 10px;
-    background-color: rgb(249, 249, 249);
+    background-color: rgba(249, 249, 249, 0.583);
     display: flex;
     flex-direction: column;
 }
@@ -262,10 +262,13 @@ body{
 
 /*Estilo de boton*/
 button{
+    letter-spacing: 2px;
     background-color: #00A170;
-    color: white;
-    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 4px;
     border-radius: 00.1rem;
+    border: 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -273,11 +276,14 @@ button{
     transition: all 500ms ease;
 }
 button:hover {
-    color: #222;
-    font-weight: bold;
-    background: rgb(34,193,195);
-    background: linear-gradient(180deg, rgba(34,193,195,1) 51%, rgba(20,177,75,0.5158438375350141) 84%);
+    animation: pulsate 1s ease-in-out;
 }
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 10px #5ddcff, 0 0 20px #4e00c2;
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     
