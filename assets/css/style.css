@@ -4,6 +4,14 @@
     padding: 0px;
     box-sizing: border-box; 
 }
+
+/*  Paleta de Colores*/
+:root {
+    --negro: #222;
+    --verde: #00A170;
+    --formulario: rgba(182, 225, 238, 0.4); 
+}
+
 /*Fuente que se utilizará en el sitio web*/
 html{
     font-family: 'Roboto Condensed', sans-serif;
@@ -20,8 +28,9 @@ header a:hover{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -29,53 +38,74 @@ body{
 .contenedor-grid {
     /*Configuración grid*/
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 80px, auto, 100px;
+    /* grid-template-columns: repeat(5,1fr); */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, auto, 100px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
     /*Estilos*/
     padding: 0;
-
-    
-    
 }
 
 /*Configuración de la barra de navegación*/
 .navbar {
     /*Configuración grid*/
-    grid-column: 1/-1;
-    grid-row: 1/2;
+    /* grid-column: 1/-1;
+    grid-row: 1/2; */
+    grid-area: header;
     /*Estilos*/
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     background-color: #222;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 10;
+    position: sticky;
+    /* z-index: 10; */
 }
 .navbar__logo,
 .navbar__links {
     padding: 10px;
 }
 
-ul {
+.navbar ul {
     list-style: none;
 }
-ul li {
+
+.navbar ul li,
+.footer ul li {
     display: inline-block;
     font-size: 20px;
     padding: 10px
 }
 
+.navbar__logo img {
+    transition: all 500ms;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.1);
+}
+
+
 /*Configuración del Main*/
 .main {
     /*Configuración grid*/
-    grid-column: 1/-1;
-    grid-row: 2/3;
+    /* grid-column: 1/-1;
+    grid-row: 2/3; */
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    width: 100%;
     /*Estilos*/
-    padding-top: 80px;
+    /* padding-top: 80px; */
     background-image: url("../img/nexus640x426.jpg");
     background-size: cover;
+    background-attachment: fixed; /*Fijo el fondo*/
+
+    
 }
 
 /*Configuraciones para títulos*/
@@ -93,8 +123,10 @@ ul li {
 /*Configuración del Footer*/
 .footer {
     /*Configuración grid*/
-    grid-column: 1/-1;
-    grid-row: 3/4;
+    /* grid-column: 1/-1;
+    grid-row: 3/4; */
+    grid-area: footer;
+    width: 100%;
     /*Estilos*/
     background-color: #222;
     color: cornflowerblue;
@@ -207,21 +239,32 @@ ul li {
     align-content: center;
     align-items: center;
 }
-/*Estilo para el Formulario*/
-.formulario{
+/* Estilo para el Formulario */
+.main-formulario {
     padding: 25px;
     margin: 2px;
+    width: 600px;
     line-height: 18px;
     background-color: rgba(182, 225, 238, 0.4);
     font-size: 18px;
     font-weight: bolder;
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.4);
 }
+/*Le doy estilo a los input*/
+.form-input {
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    height: 30px;
+    border: none;
+}
+
 /*Estilo de boton*/
 button{
     background-color: #00A170;
     color: white;
-    padding: 3px;
+    padding: 10px;
     border-radius: 00.1rem;
     text-align: center;
     text-decoration: none;
@@ -229,11 +272,28 @@ button{
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
+    
+    .navbar{
+        justify-content: center;
+        align-content: center;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar ul li a{
+        font-size: 1.5rem;
+    }
+    
     .formulario {
         font-size: 20px;
     }
     .footer {
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer ul li{
+        display: block;
     }
 }
