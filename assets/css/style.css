@@ -270,6 +270,13 @@ button{
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
+    transition: all 500ms ease;
+}
+button:hover {
+    color: #222;
+    font-weight: bold;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 51%, rgba(20,177,75,0.5158438375350141) 84%);
 }
 
 @media screen and (max-width: 400px) {
