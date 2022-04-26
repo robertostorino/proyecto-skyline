@@ -3,96 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Permite que el sitio sea responsivo. Es Mobile first, luego permite hacer zoom según el tamaño-->
+    <!-- Para garantizar una representación adecuada, y un zoom táctil para todos los dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="./assets/img/engineering-favicon.png" type="image/x-icon">
+    <title>Home</title>
+    <!--CDN para conectar Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Mi CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <div class="contenedor-grid">
-        <header class="navbar">
-            <!--Contenedor con el Logo-->
-            <div class="navbar__logo">
-                <a href="./index.html"><img src="./assets/img/logo.png" alt="Logo de Skyline"></a>
+<body class="container-fluid">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fs-2 fw-bold" href="./index.html">
+                    <img src="./assets/img/logo.png" alt="logo" width="90px">   Skyline</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fs-3" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="./pages/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="./pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="./pages/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="./pages/contact.html">Contact</a>
+                        </li>
+
+                        <!--    Por ahora el dropdown del menú lo dejo comentado, para futuras ideas    -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./">Desarrollo Web</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./">Infraestructure OnCloud</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
             </div>
-            <!--Contenedor de la barra de navegación-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./pages/services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="./pages/portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <!--Contenedor del título y presentación-->
-            <div class="titulo" >
-                <h1 class="titulo--verde">Skyline</h1>
-                <h2 class="titulo--cornflowerblue">Network and Software Solutions</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <!--    Contenedor del título y presentación    -->
+        <div class="col-sm-12 text-center">
+            <h1 class="fw-bold titulo--verde">Skyline</h1>
+            <h2 class="titulo--azul">Network and Software Solutions</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <!--    Contenedor del carousel     -->
+        <div class="container-sm container-md">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/development400x267.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Desarrollo Web</h2>
+                            <p class="fs-5">Web Design and Development</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/laptop400x267.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Infraestructure</h2>
+                            <p class="fs-5">Infraestructure plan and deploy</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/datacenter400x267.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>DataCenter</h2>
+                            <p class="fs-5">DataCenter: Plan, build, optimize and hardening</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/networking.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Connectivity</h2>
+                        <p class="fs-5">Connect everything as one</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!--Contenedor del carousel, por ahora serán un grupo de cards -->
-            <section class="tarjetas">
-                <article class="tarjeta">
-                    <h3>Desarrollo Web</h3>
-                    <p>Descripción</p>
-                    <img src="./assets/img/development400x267.jpg" alt="Desarrollo">
-                    <p>Lorem, ipsum dolor.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Infraestructura</h3>
-                    <p>Descripción</p>
-                    <img src="./assets/img/laptop400x267.jpg" alt="Infraestructura">
-                    <p>Lorem, ipsum dolor.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>DataCenter</h3>
-                    <p>Descripción</p>
-                    <img src="./assets/img/datacenter400x267.jpg" alt="DataCenter">
-                    <p>Lorem, ipsum dolor.</p>
-                </article>
-                <article class="tarjeta">
-                    <h3>Aplicaciones</h3>
-                    <p>Descripción</p>
-                    <img src="./assets/img/idea400x267.jpg" alt="Aplicaciones">
-                    <p>Lorem, ipsum dolor.</p>
-                </article>
-            </section>
-        </main>
-        <!--Zona de Footer-->
-        <footer class="footer">
-            <h2>Contact</h2>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com"><img src="./assets/img/instagram.png" alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com"><img src="./assets/img/facebook.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:storino.roberto@gmail.com"><img src="./assets/img/gmail.png" alt="Gmail">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright--center">
-                <p>Copyright©2022</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+
+    <!--Zona de Footer-->
+    <footer class="bd-footer py5 mt-2 d-flex flex-column justify-content-center align-items-center bg-black">
+        <h2 class="text-light">Contact</h2>
+        <div class="col-xs-10 ">
+            <ul class="list-unstyled"> <!-- Retira el estilo de las listas  -->
+                <li>
+                    <a href="https://www.instagram.com"><img src="./assets/img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com"><img src="./assets/img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:storino.roberto@gmail.com"><img src="./assets/img/gmail.png" alt="Gmail">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright--center text-light">
+            <p>Copyright©2022</p>
+        </div>
+    </footer>
+
+    <!-- js para conectar Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

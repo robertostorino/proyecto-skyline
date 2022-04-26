@@ -9,89 +9,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!--CDN para conectar Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-    <div class="contenedor-grid">
-        <header class="navbar">
-            <!--Contenedor con el Logo-->
-            <div class="navbar__logo">
-                <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo de Skyline"></a>
-            </div>
-            <!--Contenedor de la barra de navegación-->
-            <div>
-                <nav>
-                    <ul>
-                        <li> 
-                            <a href="../index.html">Home</a>
+<body class="container-fluid">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fs-2 fw-bold" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo" width="90px">   Skyline</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a href="../pages/services.html">Services</a>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fs-3" href="../pages/services.html">Services</a>
                         </li>
-                        <li>
-                            <a href="../pages/portfolio.html">Portfolio</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="../pages/portfolio.html">Portfolio</a>
                         </li>
-                        <li>
-                            <a href="../pages/about.html">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="../pages/about.html">About</a>
                         </li>
-                        <li>
-                            <a href="../pages/contact.html">Contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-3" href="../pages/contact.html">Contact</a>
                         </li>
+
                     </ul>
-                </nav>
+                </div>
             </div>        
-        </header>
-        <main class="main">
-            <!--Titulo con formato-->
-            <h1 class="titulo titulo--verde">Services</h1>
-            <!--Sección con breve reseña de los servicios-->
-            <section class="containerServices">
-                <article class="tarjeta__horizontal">
-                    <div class="tarjeta__horizontal__titulo">
-                        <h2 class="titulo--cornflowerblue">Web and Application Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                    <img src="../assets/img/services_note-dev.jpg" alt="Desarrollo" >
-                </article>
-                <article class="tarjeta__horizontal">
-                    <div class="tarjeta__horizontal__titulo">
-                        <h2 class="titulo--cornflowerblue">Infraestructure OnSite</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                    <img src="../assets/img/services_datacenter.jpg" alt="DataCenter">
-                </article>
-                <article class="tarjeta__horizontal">
-                    <div class="tarjeta__horizontal__titulo">
-                        <h2 class="titulo--cornflowerblue">Infraestructure OnCloud</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                    <img src="../assets/img/services_datacenter.jpg" alt="OnCloud">
-                </article>
-            </section>
-        </main>
-        <footer class="footer">
-            <h2>Contact</h2>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com"><img src="../assets/img/instagram.png" alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com"><img src="../assets/img/facebook.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:storino.roberto@gmail.com"><img src="../assets/img/gmail.png" alt="Gmail">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright--center">
-                <p>Copyright©2022</p>
-            </div>
-        </footer>
-    </div>
+    </header>
+
+    <main class="main">
+        <!--Titulo con formato-->
+        <h1 class="text-center titulo--verde">Services</h1>
+        <!--Sección con breve reseña de los servicios-->
+        <section class="row justify-content-center align-items-center d-flex flex-column">
+            <article class="m-3 col-sm-8 col-md-6 d-flex justify-content-center">
+                <div class="bg-light">
+                    <h2 class="titulo--azul">Web and Application Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <img src="../assets/img/laptop400x267.jpg" alt="Desarrollo" >
+            </article>
+            <article class="m-3 col-sm-8 col-md-6 d-flex justify-content-center">
+                <div class="bg-light">
+                    <h2 class="titulo--azul">Infraestructure OnSite</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <img src="../assets/img/services_datacenter.jpg" alt="DataCenter">
+            </article>
+            <article class="m-3 col-sm-8     col-md-6 d-flex justify-content-center">
+                <div class="bg-light">
+                    <h2 class="titulo--azul">Infraestructure OnCloud</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <img src="../assets/img/services_datacenter.jpg" alt="OnCloud">
+            </article>
+        </section>
+    </main>
     
+    <!--Zona de Footer-->
+    <footer class="bd-footer py5 d-flex flex-column justify-content-center align-items-center bg-black">
+        <h2 class="text-light">Contact</h2>
+        <div class="col-xs-10 ">
+            <ul class="list-unstyled"> <!-- Retira el estilo de las listas  -->
+                <li>
+                    <a href="https://www.instagram.com"><img src="../assets/img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com"><img src="../assets/img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:storino.roberto@gmail.com"><img src="../assets/img/gmail.png" alt="Gmail">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright--center text-light">
+            <p>Copyright©2022</p>
+        </div>
+    </footer>
+
+    <!-- js para conectar Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
