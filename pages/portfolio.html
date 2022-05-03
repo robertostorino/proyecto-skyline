@@ -26,21 +26,21 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3">
                         <li class="nav-item">
-                            <a class="nav-link text-light fs-3" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fs-3" href="../pages/services.html">Services</a>
+                            <a class="nav-link" href="../pages/services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light fs-3" href="../pages/portfolio.html">Portfolio</a>
+                            <a class="nav-link active" href="../pages/portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fs-3" href="../pages/about.html">About</a>
+                            <a class="nav-link" href="../pages/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fs-3" href="../pages/contact.html">Contact</a>
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
                         </li>
 
                     </ul>
@@ -49,48 +49,53 @@
     </header>
     <main class="main">
         <!--Contenedor del Titulo-->
-        <div class="row justify-content-center align-items-center d-flex flex-column">
-            <h1 class="col-sm-2 col-md-2 text-center titulo--verde">Portfolio</h1>
-            <video src="https://player.vimeo.com/external/149532716.sd.mp4?s=7f78f704922f932db924bbe83a3d9067128c55d1&profile_id=112" autoplay></video>
-            <!--Sección donde se muestra el portfolio-->
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center d-flex flex-column">
+                <h1 class="col-sm-2 col-md-2 text-center titulo--verde">Portfolio</h1>
+                <!--Sección donde se muestra el portfolio-->
+            </div>
         </div>
-        <section class="row my-2 justify-content-center align-items-center d-flex">
-            <article class="card m-3 bg-success text-light" style="width: 30rem;">
-                <iframe class="card-img-top" alt="web-responsive" width="560" height="315" src="https://www.youtube.com/embed/oy8dSsK57Ps" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Responsive Web Development</h5>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        
+        <section class="container">
+            
+            <article class="row py-3">
+                <iframe class="col-sm-8 video-scale" alt="web-responsive" width="560" height="315" src="https://www.youtube.com/embed/oy8dSsK57Ps" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-sm-4 bg-light">
+                    <h2 class="titulo--azul">Responsive Web Desing</h2>
+                    <p>Breve guía de cómo se puede utilizar Responsive para mejorar la experiencia de usuario en todas las pantallas y así poder llegar a más personas.</p>
+                </div>
+    
+            </article>
+
+            <article class="row py-3">
+                <iframe class="col-sm-7 video-scale" alt="datacenter-installation-on-site" width="560" height="315" src="https://www.youtube.com/embed/g5of3FCVf0w" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-sm-4 bg-light">
+                    <h2 class="titulo--azul">Rack Refactoring</h2>
+                    <p>Caso de éxito en el que se llevó las buenas prácticas al nivel estético y funcional para mejorar la calidad de trabajo en dicho Data Center</p>
                 </div>
             </article>
-            <article class="card m-3 bg-success text-light" style="width: 30rem;">
-                <iframe class="card-img-top" alt="datacenter-installation-on-site" width="560" height="315" src="https://www.youtube.com/embed/g5of3FCVf0w" 
+
+            <article class="row py-3">
+                <iframe class="col-sm-6 video-scale" alt="infraestructure-hardening" width="560" height="315" src="https://www.youtube.com/embed/2llWuivdS7w" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">DataCenter Installation On Site</h5>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col-sm-4 bg-light">
+                    <h2 class="titulo--azul">Infraestructure-hardening</h2>
+                    <p>Forlacelimiento de la infraestructura de la organización para reducir flancos de vulnerabilidad</p>
                 </div>
             </article>
-            <article class="card m-3 bg-success text-light" style="width: 30rem;">
-                <iframe class="card-img-top" alt="infraestructure-hardening" width="560" height="315" src="https://www.youtube.com/embed/2llWuivdS7w" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Infraestructure Hardening</h5>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </article>
+            
         </section>
         
     </main>
     
     <!--Zona de Footer-->
-    <footer class="bd-footer d-flex flex-column justify-content-center align-items-center bg-black">
+    <footer class="bd-footer text-center p-4 mt-4 bg-black">
+        
         <h2 class="text-light">Contact</h2>
         <div class="col-xs-10 ">
             <ul class="list-unstyled"> <!-- Retira el estilo de las listas  -->
@@ -112,7 +117,31 @@
             <p>Copyright©2022</p>
         </div>
     </footer>
-    
+<!--     
+    <footer class="bd-footer d-flex flex-column justify-content-center align-items-center bg-black">
+        
+        <h2 class="text-light">Contact</h2>
+        <div class="col-xs-10 ">
+            <ul class="list-unstyled"> <!-- Retira el estilo de las listas  -->
+                <!-- <li>
+                    <a href="https://www.instagram.com"><img src="../assets/img/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com"><img src="../assets/img/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:storino.roberto@gmail.com"><img src="../assets/img/gmail.png" alt="Gmail">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright--center text-light">
+            <p>Copyright©2022</p>
+        </div>
+    </footer> -->
+
     <!-- js para conectar Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
