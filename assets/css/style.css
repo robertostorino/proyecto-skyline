@@ -1,37 +1,43 @@
+@charset "UTF-8";
 /*reset*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/*Configuración del Main*/
 .main {
-    /*Estilos*/
-    /* padding-top: 80px; */
-    background-image: url("../img/nexus640x426.jpg");
-    background-size: cover;
-    background-attachment: fixed; /*Fijo el fondo*/
-    min-height: 100vh;
+  /*Estilos*/
+  background-image: url("../img/nexus640x426.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*Fijo el fondo*/
+  min-height: 100vh;
 }
 
-.titulo--verde{
-    color: #00A170;
-    font-weight: bold;
+.titulo--verde {
+  color: #00A170;
+  font-weight: bold;
 }
 
-.titulo--azul{
-    color: cornflowerblue;
+.titulo--azul {
+  color: cornflowerblue;
 }
 
+/*  Página de Contact*/
 .bg-formulario {
-    background-color: rgba(182, 225, 238, 0.49);
+  background-color: rgba(182, 225, 238, 0.49);
 }
 
+/*  Página de Portfolio*/
 .video-scale {
-    transition: 600ms ease-in-out;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
 }
 
 .video-scale:hover {
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+/*# sourceMappingURL=style.css.map */
