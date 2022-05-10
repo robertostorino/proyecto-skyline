@@ -1,0 +1,31 @@
+/*  Button's file   */
+
+.boton {
+    @include dimensiones(300px, 40px);
+    // width: 200px;
+    // height: 40px;
+    background-color: white;
+    color: $colorNegro;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+
+.boton--aceptar {
+    @extend .boton;
+    background: $colorBotonAceptar;
+    
+    &:hover {
+        background-color: #007FFF;
+        color: $colorBlanco;
+    }
+}
+
+.boton--cancelar {
+    @extend .boton;
+    background-color: $colorBotonCancelar;
+    &:hover {
+        background-color: #D2122E;
+        color: $colorBlanco;
+    }
+}

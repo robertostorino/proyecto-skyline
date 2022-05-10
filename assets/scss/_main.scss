@@ -3,6 +3,7 @@
     background-image: url("../img/nexus640x426.jpg");
     background-size: cover;
     background-attachment: fixed; /*Fijo el fondo*/
+    background-position: right;
     min-height: 100vh;
 }
 
@@ -15,8 +16,8 @@
 }
 
 /*  Página de Contact*/
-.bg-formulario {
-    background-color: $colorBgFormulario;
+.bg-glass {
+    background-color: $colorBgGlass;
 }
 
 /*  Página de Portfolio*/
@@ -24,5 +25,13 @@
     transition: 600ms ease-in-out;
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+/*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
+@media screen and (max-width: 400px) {
+    .texto-about {
+        background-color: #efefef;
+        border: 1 solid;
     }
 }

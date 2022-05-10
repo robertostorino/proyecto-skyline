@@ -13,6 +13,7 @@
   background-size: cover;
   background-attachment: fixed;
   /*Fijo el fondo*/
+  background-position: right;
   min-height: 100vh;
 }
 
@@ -26,8 +27,8 @@
 }
 
 /*  Página de Contact*/
-.bg-formulario {
-  background-color: rgba(182, 225, 238, 0.49);
+.bg-glass {
+  background-color: rgba(182, 225, 238, 0.724);
 }
 
 /*  Página de Portfolio*/
@@ -39,5 +40,42 @@
 .video-scale:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+/*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
+@media screen and (max-width: 400px) {
+  .texto-about {
+    background-color: #efefef;
+    border: 1 solid;
+  }
+}
+
+/*  Button's file   */
+.boton, .boton--aceptar, .boton--cancelar {
+  height: 40px;
+  width: 300px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.boton--aceptar {
+  background: #4AAEE0;
+}
+
+.boton--aceptar:hover {
+  background-color: #007FFF;
+  color: #fff;
+}
+
+.boton--cancelar {
+  background-color: #F05F57;
+}
+
+.boton--cancelar:hover {
+  background-color: #D2122E;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
