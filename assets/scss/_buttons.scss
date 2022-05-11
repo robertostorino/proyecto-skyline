@@ -1,14 +1,14 @@
 /*  Button's file   */
 
 .boton {
-    @include dimensiones(300px, 40px);
+    @include dimensiones(215px, 45px);
     // width: 200px;
     // height: 40px;
     background-color: white;
     color: $colorNegro;
-    text-align: center;
-    border: none;
-    border-radius: 8px;
+    text-align: map-get($boton , alineacion );
+    border: map-get($boton , bordes );
+    border-radius: map-get($boton , radio );
 }
 
 .boton--aceptar {

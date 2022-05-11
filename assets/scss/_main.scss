@@ -1,9 +1,18 @@
-.main {
+.bg-index {
     /*Estilos*/
     background-image: url("../img/nexus640x426.jpg");
     background-size: cover;
     background-attachment: fixed; /*Fijo el fondo*/
-    background-position: right;
+    background-position: top;
+    min-height: 100vh;
+}
+
+.bg-contact {
+    
+    background-image: url("../img/nexus640x426.jpg");
+    background-size: cover;
+    background-attachment: fixed; /*Fijo el fondo*/
+    background-position: top;
     min-height: 100vh;
 }
 
@@ -13,6 +22,11 @@
 }
 .titulo--azul{
     color: $colorSecundarioTitulo;
+}
+
+/*  Posiciona menú a la derecha  */
+.navbar-collapse {
+    flex-grow: 0;
 }
 
 /*  Página de Contact*/
@@ -29,9 +43,13 @@
 }
 
 /*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
     .texto-about {
         background-color: #efefef;
         border: 1 solid;
+    }
+    .bg-contact {
+        background-color: $colorNegro;
+        background-image: none;
     }
 }

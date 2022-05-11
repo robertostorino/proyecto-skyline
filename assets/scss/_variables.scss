@@ -1,12 +1,7 @@
-/*reset*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
 $colorPrincipalTitulo : #00A170;
-$colorSecundarioTitulo : #1836E0;
+$colorSecundarioTitulo : #007FFF;
+$colorBgSecundario :#BABFBE;
 $colorNegro : #000;
 $colorBlanco : #fff;
 $colorBotonAceptar : #4AAEE0;
@@ -14,3 +9,10 @@ $colorBotonAceptarHover: #007FFF;
 $colorBotonCancelar: #F05F57;
 $colorBotonCancelarHover: #D2122E;
 $colorBgGlass : rgba(182, 225, 238, 0.724);
+
+/*Implemento el map*/
+$boton : (
+    alineacion: center,
+    bordes: none,
+    radio: 5px,
+    );
