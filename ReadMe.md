@@ -1,6 +1,20 @@
-# Skyline
+# Proyecto Skyline
 
 Skyline es un equipo de trabajo que crea, diseña e implementa soluciones de software y de red.
+
+# Herramientas
+
+- HTML
+- CSS
+- Bootstrap
+- SASS
+- Git
+- GitHub (server)
+
+# Objetivos
+
+- SEO
+- Responsive
 
 ## Modificaciones
 
