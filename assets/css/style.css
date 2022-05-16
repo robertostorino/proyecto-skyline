@@ -29,10 +29,12 @@
 .titulo--verde {
   color: #00A170;
   font-weight: bold;
+  font-size: 50px;
 }
 
 .titulo--azul {
   color: #007FFF;
+  font-size: 40px;
 }
 
 /*  Posiciona menú a la derecha  */
@@ -56,6 +58,10 @@
 .video-scale:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.bg-title {
+  background-color: rgba(0, 0, 0, 0.558);
 }
 
 /*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
@@ -96,6 +102,10 @@
 
 .boton--cancelar:hover {
   background-color: #D2122E;
+  color: #fff;
+}
+
+footer div ul li i {
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
