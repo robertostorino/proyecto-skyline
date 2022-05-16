@@ -67,8 +67,8 @@
 /*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
 @media screen and (max-width: 575px) {
   .texto-about {
-    background-color: #efefef;
-    border: 1 solid;
+    background-color: #000;
+    color: #fff;
   }
   .bg-contact {
     background-color: #000;
