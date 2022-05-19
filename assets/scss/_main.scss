@@ -16,6 +16,20 @@
     min-height: 100vh;
 }
 
+/*  Página de Contact*/
+.bg-glass {
+    background-color: $colorBgGlass;
+}
+
+.card {
+    border-radius: 10px;
+
+    transition: 600ms ease-in-out;
+    &:hover {
+        transform: scale(1.04);
+    }
+}
+
 .titulo--verde{
     color: $colorPrincipalTitulo;
     font-weight: bold;
@@ -31,16 +45,13 @@
     flex-grow: 0;
 }
 
-/*  Página de Contact*/
-.bg-glass {
-    background-color: $colorBgGlass;
-}
+
 
 /*  Página de Portfolio*/
 .video-scale {
     transition: 600ms ease-in-out;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.04);
     }
 }
 

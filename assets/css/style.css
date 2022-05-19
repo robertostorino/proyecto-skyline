@@ -26,6 +26,22 @@
   min-height: 100vh;
 }
 
+/*  Página de Contact*/
+.bg-glass {
+  background-color: rgba(182, 225, 238, 0.724);
+}
+
+.card {
+  border-radius: 10px;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
 .titulo--verde {
   color: #00A170;
   font-weight: bold;
@@ -44,11 +60,6 @@
           flex-grow: 0;
 }
 
-/*  Página de Contact*/
-.bg-glass {
-  background-color: rgba(182, 225, 238, 0.724);
-}
-
 /*  Página de Portfolio*/
 .video-scale {
   -webkit-transition: 600ms ease-in-out;
@@ -56,8 +67,8 @@
 }
 
 .video-scale:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .bg-title {
@@ -103,6 +114,13 @@
 .boton--cancelar:hover {
   background-color: #D2122E;
   color: #fff;
+}
+
+footer {
+  background-image: url(../img/footer-wallpaper.jpg);
+  background-color: rgba(3, 3, 3, 0.545);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 footer div ul li i {
