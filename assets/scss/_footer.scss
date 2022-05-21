@@ -4,10 +4,18 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     div {
-        ul {
-            li {
-                i {
+        div {
+            div {
+                h2, p {
                     color: $colorBlanco;
+                }
+                ul {
+                    li {
+                        color: $colorBlanco;
+                        i {
+                            color: $colorBlanco;
+                        }
+                    }
                 }
             }
         }

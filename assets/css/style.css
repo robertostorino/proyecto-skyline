@@ -7,41 +7,6 @@
 }
 
 /*Implemento el map*/
-.bg-index {
-  /*Estilos*/
-  background-image: url("../img/nexus640x426.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  /*Fijo el fondo*/
-  background-position: top;
-  min-height: 100vh;
-}
-
-.bg-contact {
-  background-image: url("../img/nexus640x426.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  /*Fijo el fondo*/
-  background-position: top;
-  min-height: 100vh;
-}
-
-/*  Página de Contact*/
-.bg-glass {
-  background-color: rgba(182, 225, 238, 0.724);
-}
-
-.card {
-  border-radius: 10px;
-  -webkit-transition: 600ms ease-in-out;
-  transition: 600ms ease-in-out;
-}
-
-.card:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-}
-
 .titulo--verde {
   color: #00A170;
   font-weight: bold;
@@ -51,6 +16,11 @@
 .titulo--azul {
   color: #007FFF;
   font-size: 40px;
+}
+
+p {
+  font-size: 22px;
+  padding: 1rem;
 }
 
 /*  Posiciona menú a la derecha  */
@@ -71,20 +41,29 @@
           transform: scale(1.04);
 }
 
-.bg-title {
-  background-color: rgba(0, 0, 0, 0.558);
+@media screen and (max-width: 575px) {
+  /*  aumenta el tamaño de la letra de los párrafos en mobile */
+  p {
+    font-size: 28px;
+  }
 }
 
-/*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
-@media screen and (max-width: 575px) {
-  .texto-about {
-    background-color: #000;
-    color: #fff;
-  }
-  .bg-contact {
-    background-color: #000;
-    background-image: none;
-  }
+.card {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 10px 2px #0000007e;
+          box-shadow: 2px 2px 10px 2px #0000007e;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.card .card-title {
+  color: #000;
+  font-size: bolder;
 }
 
 /*  Button's file   */
@@ -123,7 +102,42 @@ footer {
   background-attachment: fixed;
 }
 
-footer div ul li i {
+footer div div div h2, footer div div div p {
   color: #fff;
+}
+
+footer div div div ul li {
+  color: #fff;
+}
+
+footer div div div ul li i {
+  color: #fff;
+}
+
+.bg-index {
+  /*Estilos*/
+  background-image: url("../img/nexus640x426.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*Fijo el fondo*/
+  background-position: top;
+  min-height: 100vh;
+}
+
+.bg-contact {
+  background-image: url("../img/nexus640x426.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*Fijo el fondo*/
+  background-position: top;
+  min-height: 100vh;
+}
+
+.bg-glass {
+  background-color: rgba(182, 225, 238, 0.724);
+}
+
+.bg-title {
+  background-color: rgba(0, 0, 0, 0.558);
 }
 /*# sourceMappingURL=style.css.map */

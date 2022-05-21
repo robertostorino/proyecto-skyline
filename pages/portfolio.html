@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../assets/img/engineering-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--    Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <!--    CDN font-awesome    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -66,7 +67,7 @@
                 <iframe class="col-sm-8 video-scale" alt="web-responsive" width="560" height="315" src="https://www.youtube.com/embed/oy8dSsK57Ps" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="col-sm-4 bg-light">
+                <div class="card col-sm-4 bg-light">
                     <h2 class="titulo--azul">Responsive Web Desing</h2>
                     <p>Breve guía de cómo se puede utilizar Responsive para mejorar la experiencia de usuario en todas las pantallas y así poder llegar a más personas.</p>
                 </div>
@@ -77,9 +78,9 @@
                 <iframe class="col-sm-8 video-scale" alt="datacenter-installation-on-site" width="560" height="315" src="https://www.youtube.com/embed/g5of3FCVf0w" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="col-sm-4 bg-light">
+                <div class="card col-sm-4 bg-light">
                     <h2 class="titulo--azul">Rack Refactoring</h2>
-                    <p>Caso de éxito en el que se llevó las buenas prácticas al nivel estético y funcional para mejorar la calidad de trabajo en dicho Data Center</p>
+                    <p class="fw-normal lead fs-4">Caso de éxito en el que se llevó las buenas prácticas al nivel estético y funcional para mejorar la calidad de trabajo en dicho Data Center</p>
                 </div>
             </article>
 
@@ -87,9 +88,9 @@
                 <iframe class="col-sm-8 video-scale" alt="infraestructure-hardening" width="560" height="315" src="https://www.youtube.com/embed/2llWuivdS7w" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="col-sm-4 bg-light">
+                <div class="card col-sm-4 bg-light">
                     <h2 class="titulo--azul">Infraestructure-hardening</h2>
-                    <p>Forlacelimiento de la infraestructura de la organización para reducir flancos de vulnerabilidad</p>
+                    <p class="fw-normal lead fs-4">Forlacelimiento de la infraestructura de la organización para reducir flancos de vulnerabilidad</p>
                 </div>
             </article>
             
@@ -98,20 +99,34 @@
     </main>
     
     <!--Zona de Footer-->
-    <footer class="bd-footer p-5 d-flex flex-column flex-md-row justify-content-around align-items-center bg-black">
+    <footer class="bd-footer p-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 item">
+                    <h2>Contact</h2>
+                    <ul class="ps-3 list-unstyled ">
+                        <li class="fs-4">Web Development</li>
+                        <li class="fs-4">Project Management</li>
+                        <li class="fs-4">DataCenter Projects</li>
+                        <li class="fs-4">Scrum Master</li>
+                        <li class="fs-4">S.E.O.</li>
+                        <li class="fs-4">Web Application</li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 item">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fs-1 p-3"></i></a></li>
+                        <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f fs-1 p-3"></i></a></li>
+                        <li><a href="mailto:storino.roberto@gmail.com"><i class="fa-solid fa-envelope fs-1 p-3"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 fs-4">
+                    <p>Roberto Storino Copyright©2022</p>
+                </div>
+            </div>
+        </div>
         
-        <h2 class="text-light">Contact</h2>
-        <div class="col-xs-10 ">
-            <ul class="list-unstyled d-flex align-items-center">
-                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fs-1 p-3"></i></a></li>
-                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f fs-1 p-3"></i></a></li>
-                <li><a href="mailto:storino.roberto@gmail.com"><i class="fa-solid fa-envelope fs-1 p-3"></i></a></li>
-            </ul>
-        </div>
-        <div class="copyright--center text-light fs-4">
-            <p>Roberto Storino</p>
-            <p>Copyright©2022</p>
-        </div>
     </footer>
 
     <!-- js para conectar Bootstrap-->

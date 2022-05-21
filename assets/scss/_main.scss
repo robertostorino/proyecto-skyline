@@ -1,34 +1,3 @@
-.bg-index {
-    /*Estilos*/
-    background-image: url("../img/nexus640x426.jpg");
-    background-size: cover;
-    background-attachment: fixed; /*Fijo el fondo*/
-    background-position: top;
-    min-height: 100vh;
-}
-
-.bg-contact {
-    
-    background-image: url("../img/nexus640x426.jpg");
-    background-size: cover;
-    background-attachment: fixed; /*Fijo el fondo*/
-    background-position: top;
-    min-height: 100vh;
-}
-
-/*  Página de Contact*/
-.bg-glass {
-    background-color: $colorBgGlass;
-}
-
-.card {
-    border-radius: 10px;
-
-    transition: 600ms ease-in-out;
-    &:hover {
-        transform: scale(1.04);
-    }
-}
 
 .titulo--verde{
     color: $colorPrincipalTitulo;
@@ -40,11 +9,15 @@
     font-size: 40px;
 }
 
+p {
+    font-size: 22px;
+    padding: 1rem;
+}
+
 /*  Posiciona menú a la derecha  */
 .navbar-collapse {
     flex-grow: 0;
 }
-
 
 
 /*  Página de Portfolio*/
@@ -55,20 +28,10 @@
     }
 }
 
-.bg-title {
-    background-color: rgba(0, 0, 0, 0.558);
-}
 
-
-/*  Ayuda a que en la página de About se pueda leer el texto más facilmente en mobile   */
 @media screen and (max-width: 575px) {
-    .texto-about {
-        background-color: $colorNegro;
-        // background-color: #efefef;
-        color: $colorBlanco;
-    }
-    .bg-contact {
-        background-color: $colorNegro;
-        background-image: none;
+    /*  aumenta el tamaño de la letra de los párrafos en mobile */
+    p {
+        font-size: 28px;
     }
 }
