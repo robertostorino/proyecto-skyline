@@ -8,23 +8,28 @@
 
 
 <url>
-  <loc>https://robertostorino.github.io/proyecto-skyline/pages/about.html</loc>
-  <lastmod>2022-05-11T23:52:45+00:00</lastmod>
+  <loc>https://robertostorino.github.io/proyecto-skyline/index.html</loc>
+  <lastmod>2022-05-21T06:03:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://robertostorino.github.io/proyecto-skyline/pages/services.html</loc>
-  <lastmod>2022-05-11T23:52:45+00:00</lastmod>
+  <lastmod>2022-05-21T06:03:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://robertostorino.github.io/proyecto-skyline/pages/portfolio.html</loc>
-  <lastmod>2022-05-11T23:52:45+00:00</lastmod>
+  <lastmod>2022-05-21T06:03:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robertostorino.github.io/proyecto-skyline/pages/about.html</loc>
+  <lastmod>2022-05-21T06:03:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://robertostorino.github.io/proyecto-skyline/pages/contact.html</loc>
-  <lastmod>2022-05-11T23:52:45+00:00</lastmod>
+  <lastmod>2022-05-21T06:03:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
